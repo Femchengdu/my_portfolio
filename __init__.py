@@ -8,16 +8,19 @@ app = Flask(__name__)
 @app.route('/')
 def application():
 	# Return the index template
-    return render_template(index.html)
+    return render_template('index.html')
 
-# Add the super scret and call the app
-app.secret_key = 'chengdu_ruby_python'
 
-# I guess this is for error logging
-app.debug = True    
+# This step is related to the module load
+if __name__ == '__main__':
+	# Add the super scret and call the app
+	app.secret_key = 'chengdu_ruby_python'
 
-# Run the app without specifying a port
-app.run()
+	# I guess this is for error logging
+	app.debug = True    
+
+	# Run the app without specifying a port
+	app.run()
 
     
 
