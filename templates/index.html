@@ -1,11 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>
-		Testing My Portfolio
-	</title>
-</head>
-<body>
-	<h3>Welcome Fullstack Develper!</h3>
-</body>
+<html lang="en">
+	<head>
+		<title>My Portforlio</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/try.css">
+	</head>
+	<body>
+		<main class="main_section">
+			<header class="box_550 flex_head">
+				<div class="mobile_logo">
+					<img src="{{ url_for('static', filename = 'img/logo_mobile.png') }}" alt="mobile logo image">
+				</div>
+				<section class="head_caption">
+					<h2>Ajayi Samuel</h2>
+					<h3>Full Stack Web Develper</h3>
+				</section>
+			</header>
+			<div class="box_550"><hr class="h_rule"></div>
+			<div class="color_samples box_550">
+				<section class="colors">
+					<div class="one color_sample_height"></div>
+					<h6 class="colr_margin">#02b3e4</h6>
+				</section>
+				<section class="colors">
+					<div class="two color_sample_height"></div>
+					<h6 class="colr_margin">#2d3c49</h6>
+				</section>
+				<section class="colors">
+					<div class="three color_sample_height"></div>
+					<h6 class="colr_margin">#7d97ad</h6>
+				</section>
+			</div>
+			<div class="main_img_section box_550">
+				<figure class="main_img_figure">
+					<img src="{{ url_for('static', filename = 'img/main_img.jpg') }}" alt="main section image">
+				</figure>
+			</div>
+			
+			<section class="feature_head box_550">
+				<h2 class="feature_heading"> Featured Work</h2>
+			</section>
+
+			<section class="work_features box_550">
+				<figure class="figure_size">
+					<img src="{{ url_for('static', filename = 'img/port_img.jpg') }}" class="box_550" alt="feature image">
+					<figcaption class="figcaption_style">
+						<h4 class="caption_style">Web</h4>
+						<a href="#" class="caption_link">github link</a>	
+					</figcaption>
+				</figure>
+				<figure class="figure_size">
+					<img src="{{ url_for('static', filename = 'img/port_img.jpg') }}" class="box_550" alt="feature image">
+					<figcaption class="figcaption_style">
+						<h4 class="caption_style">Mobile</h4>
+						<a href="#" class="caption_link">github link</a>
+					</figcaption>
+				</figure>
+				<figure class="figure_size">
+					<img src="{{ url_for('static', filename = 'img/port_img.jpg') }}" class="box_550" alt="feature image">
+					<figcaption class="figcaption_style">
+						<h4 class="caption_style">Desktop</h4>
+						<a href="#" class="caption_link">github link</a>
+					</figcaption>
+				</figure>
+			</section>
+			<p class="box_550">Contact me for more information.</p>
+			<footer class="box_550">&copy; 2018 - chengdu_ruby_python</footer>	
+		</main>
+	</body>
 </html>

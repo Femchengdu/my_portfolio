@@ -1,0 +1,149 @@
+body,
+html {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #2d3c49;
+  width: 100%;
+  height: 100%
+}
+
+
+/*
+Common styles
+*/
+
+.main_section {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.one {
+	background-color: #02b3e4;
+}
+
+.two {
+	background-color: #2d3c49;
+}
+
+.three {
+	background-color: #7d97ad;
+}
+
+/*
+Below 600px styles normal flex-fluid enhancements
+*/
+@media screen and (min-width: 310px) {
+	.box_550 {
+		width: 100%;
+	}
+
+	.mobile_logo {
+		width: 50%;
+	}
+
+	.head_caption {
+		width: 50%;
+		text-align: right;
+	}
+
+	.flex_head {
+		display: flex;
+	}
+
+	.h_rule {
+		height: 3px;
+		background-color: #7d97ad;
+	}
+
+	.color_samples {
+		display: flex;
+	}
+
+	.colors {
+		width: 33.3%;
+	}
+
+	.color_sample_height {
+		height: 40px;
+	}
+
+	.colr_margin {
+		margin-top: 0;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+
+	.feature_heading {
+		margin-bottom: 0;
+	}
+
+	.caption_style {
+		margin-bottom: 0;
+		text-transform: uppercase;
+	}
+
+	.caption_link {
+		text-decoration: none;
+	}
+
+	.figcaption_style {
+		text-align: center;
+	}
+
+	footer {
+		text-align: center;
+	}
+}
+
+/*
+Above 550px
+*/
+
+@media screen and (min-width: 551px) {
+	.main_section {
+		margin-left: 25%;
+		margin-right: 10%
+	}
+	.color_samples {
+		width: 20%;
+		position: absolute;
+		left: 0px;
+		top: 145px;
+		order: -1;
+		display: block;
+	}
+
+	.colors {
+		position: relative;
+		margin-left: 70px;
+		width: 40%
+	}
+
+	.main_img_figure {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
+	.work_features {
+		display: flex;
+	}
+	.figure_size {
+		margin-left: 0;
+		margin-right: 0;
+		padding-right: 5px;
+		width: 33%
+	}
+	.caption_style {
+		margin-top: 0;
+	}
+}
+
+/*
+Above 1100px
+*/
+
+@media screen and (min-width: 1100px) {
+	.main_section {
+		width: 750px;
+		margin: 0 auto;
+	}
+}
